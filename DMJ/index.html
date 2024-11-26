@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+
+<body>
+
+    <div class="table_container">
+
+        <!-- Enter data -->
+           
+        <div class="form">
+            <label for="nom">Name:</label>
+            <input type="text" id="form_nom">
+            <label for="prenom">First Name:</label>
+            <input type="text" id="form_prenom">
+            <label for="points">Points:</label>
+            <input type="number" id="form_points">
+            <button onclick="doNewData()" id="ajouter">Add</button>
+        </div>
+
+        <!-- Display the table -->
+
+        <table id="Table">
+            <tr class="ligne_1">
+                <td class="col_1">N</td>
+                <td class="col_2">Name</td>
+                <td class="col_3">First Name</td>
+                <td class="col_4">Points</td>
+                <td class="col_5">Select</td>
+            </tr>
+        </table>
+
+        <!-- Display the number of rows and points -->
+
+        <div class="resume">
+            <p id="p1">0 row(s)</p>
+            <p id="p3"> Total point(s) = 0 </p>
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+            <button onclick="ConsoleTableau()" id="consoleTableau">Console Table</button>
+            <button onclick="deleteRow()" id="supprimer">Delete</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
